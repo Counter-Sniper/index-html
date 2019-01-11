@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" novalidate>
+
+        <label for="date">Date</label>
+        <input type="date" id="date"></br></br>
+
+        <label for="month">Month</label>
+        <input type="month" id="month"></br></br>
+
+        <label for="week">Week</label>
+        <input type="week" id="week"></br></br>
+
+        <label for="time">Time</label>
+        <input type="time" id="time" autofocus></br></br>
+
+        <label for="number">Number</label>
+        <input style="width: 200px" type="number" id="number" min="1" max="10" placeholder="Podaj liczbe z zakresu 1-10"></br></br>
+
+        <label for="range">Range</label>
+        <input type="range" id="range" min="1" max="100" step="10" value="50"></br></br>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Podaj adres email"></br></br>
+
+        <label for="tel">Tel</label>
+        <input type="tel" id="tel" placeholder="Podaj numer telefonu" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"></br></br>
+
+        <label for="url">Url</label>
+        <input type="url" id="url" placeholder="Podaj adres strony www"></br></br>
+
+        <label for="color">Color</label>
+        <input type="color" id="color"></br></br>
+
+        <label for="search">Search</label>
+        <input type="search" id="search" placeholder="Wprowadz wyszukiwany ciąg" required></br></br>
+
+        <label for="progress">Progress</label>
+        <progress max="100" value="40" id="progress"></progress></br></br>
+
+        <label for="text">Wybierz Miasto</label>
+        <input type="text" id="text" list="miasta" placeholder="Wybierz miasto"></br></br>
+        <datalist id="miasta">
+            <option value="Katowice"></option>
+            <option value="Kraków"></option>
+            <option value="Wrocław"></option>
+            <option value="Opole"></option>
+            <option value="Bydgoszcz"></option>
+        </datalist>
+
+        <input type="submit">
+
+    </form>
+</body>
+</html>
