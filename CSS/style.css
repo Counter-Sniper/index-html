@@ -23,20 +23,29 @@ body{
     font-size: 12px;
 }
 
-#main label {
+.simple-form{
+    padding: 5px;
+}
+
+.simple-form label {
     font-weight: bold;
 }
 
-#main input[type="text"], 
-#main select,
-#main input[type="password"],
-#main textarea {
+.simple-form input[type="text"], 
+.simple-form select,
+.simple-form input[type="password"],
+.simple-form textarea {
     width: 160px;
 }
 
-#main input[type="submit"]{
+.simple-form input[type="submit"]{
     background-color: brown;
     border-radius: 12px;
     padding: 3px;
     margin-top: 10px;
+}
+
+.border-image{
+    border: solid 1px #f22;
+    border-radius: 10px;
 }
