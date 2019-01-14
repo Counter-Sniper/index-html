@@ -39,6 +39,8 @@ html, body{
 .simple-form{
     padding: 5px;
     width: 300px;
+    display: inline-block;
+    vertical-align: top;
     /*position: absolute;
     bottom: 50px;
     left: 50px;*/
@@ -66,4 +68,11 @@ html, body{
 .border-image{
     border: solid 1px #f22;
     border-radius: 10px;
+}
+
+#results{
+    padding: 2px;
+    width: 500px;
+    display: inline-block;
+    vertical-align: top;
 }
