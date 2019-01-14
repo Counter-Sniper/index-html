@@ -39,6 +39,10 @@ html, body{
 .simple-form{
     padding: 5px;
     width: 300px;
+    /*position: absolute;
+    bottom: 50px;
+    left: 50px;*/
+
 }
 
 .simple-form label {
