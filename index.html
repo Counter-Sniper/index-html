@@ -10,7 +10,7 @@
         <!-- [if lt IE 9]>
                 <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.js"></script>
         <![endif]-->
-        <link rel="stylesheet" href="CSS/style.css">
+        <link rel="stylesheet" href="CSS/style.css">      
     </head>
     <body>
         <div class="container">
@@ -66,6 +66,13 @@
                         &copy; 2019 Mariusz  
                         <a href="http://dev-hobby.pl">Dev-hobby.pl</a>   
                     </footer> 
-        </div>    
+        </div> 
+        <script type="text/javascript">
+            var komunikat = "Witaj JavaScript";
+            console.log(komunikat);
+
+            var resultsDiv = document.getElementById("results");
+            resultsDiv.innerHTML = "<p>To jest JavaScript</p>";
+        </script>   
     </body>
 </html>
