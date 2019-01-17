@@ -39,3 +39,35 @@ if(numer == "10"){
 } else {
     console.log("inne");
 }
+
+
+//function wyswietlKomunikat(komunikat){
+//    console.log("Komunikat do wyświetlenia : " + komunikat);
+//}
+
+function wyswietlKomunikat(komunikat, komunikat2){
+    if(komunikat2){
+        console.log("Komunikat do wyświetlenia : " + komunikat + komunikat2);
+    } else {
+        console.log("Komunikat do wyświetlenia : " + komunikat);
+    }
+   
+}
+
+wyswietlKomunikat("tekst informacyjny");
+wyswietlKomunikat("tekst informacyjny", "kolejny tekst");
+
+var wyswietlTo = function(komunikat){
+    console.log(komunikat);
+}
+
+wyswietlTo("Komunikat testowy");
+
+var wyswietlToGdy = function(komunikat, callback){
+    wyswietlTo(komunikat);
+    callback();
+}
+
+wyswietlToGdy("wywolujemy wyswietlToGdy", function () {
+    console.log("wywołujemy callback");
+});
