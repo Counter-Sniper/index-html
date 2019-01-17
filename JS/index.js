@@ -27,3 +27,15 @@ console.log("PrawdaFalsz jest typu : " + typeof(prawdaFalsz));
 console.log("nowaZmienna jest typu : " + typeof(nowaZmienna));
 
 //komunikaty = "Nowa wartosć";
+
+if(!none){
+    console.log("None jest niezdefiniowana");
+} 
+
+if(numer == "10"){
+    console.log("numer jest kompatybilny");
+} else if (numer === 10){
+    console.log("numer jest identyczny ")
+} else {
+    console.log("inne");
+}
