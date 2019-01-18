@@ -43,10 +43,31 @@ var wyniki = [{
         login: "mariusz",
         id: 1234
     }
+},
+{
+    nazwa: "React",
+    jezyk: "JavaScript",
+    ocena: 4.2,
+    wyswietlWynik: function(){ },
+    wlasciciel: { 
+        login: "mariusz",
+        id: 1234
+    }
 }];
 
-console.log(wyniki.length);
-console.log(wyniki[0].nazwa);
+
+for(var x = 0; x < wyniki.length; x++){
+
+    var wynik = wyniki[x];
+
+    if(wynik.ocena < 4) continue;
+
+    console.log(wynik.nazwa);
+}
+
+
+// console.log(wyniki.length);
+// console.log(wyniki[0].nazwa);
 
 // wyniki.push(wynik);
 // wyniki.push({ 
