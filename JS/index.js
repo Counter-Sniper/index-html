@@ -71,3 +71,15 @@ var wyswietlToGdy = function(komunikat, callback){
 wyswietlToGdy("wywolujemy wyswietlToGdy", function () {
     console.log("wywołujemy callback");
 });
+
+var global = true;
+
+function test(){
+    console.log("global : " + global);
+    var wiadomosc = "jakas wiadomosc";
+    console.log("Test: " + wiadomosc);
+}
+
+//console.log("Test: " + wiadomosc);
+
+test();
