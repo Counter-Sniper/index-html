@@ -78,6 +78,10 @@ function test(){
     console.log("global : " + global);
     var wiadomosc = "jakas wiadomosc";
     console.log("Test: " + wiadomosc);
+
+    wyswietlToGdy("Z domkniecia", function(){
+        wyswietlTo("to jest z domkniecia : " + wiadomosc);
+    });
 }
 
 //console.log("Test: " + wiadomosc);
