@@ -5,85 +5,136 @@ Index.js
 */
 "use strict"
 
-var komunikat = "Witaj JavaScript";
-console.log(komunikat);
 
-var resultsDiv = document.getElementById("results");
-resultsDiv.innerHTML = "<p>To jest JavaScript</p>";
+// var wynik = {
+//     nazwa: "Angular",
+//     jezyk: "JavaScript",
+//     ocena: 4.6,
+//     wyswietlWynik: function(){ },
+//     wlasciciel: { 
+//         login: "mariusz",
+//         id: 1234
+//     }
+// };
 
-console.log("Komunikat jest typu : " + typeof(komunikat));
-console.log("Div wyniki jest typu : " + typeof(resultsDiv));
+// console.log(wynik.nazwa);
 
-var none;
-console.log("None jest typu : " + typeof(none));
+// wynik.numerTelefonu = "111-222-333";
 
-var numer = 10;
-console.log("Numer jest typu : " + typeof(numer));
-
-var prawdaFalsz = true;
-console.log("PrawdaFalsz jest typu : " + typeof(prawdaFalsz));
-
-//nowaZmienna = "Test";
-console.log("nowaZmienna jest typu : " + typeof(nowaZmienna));
-
-//komunikaty = "Nowa wartosć";
-
-if(!none){
-    console.log("None jest niezdefiniowana");
-} 
-
-if(numer == "10"){
-    console.log("numer jest kompatybilny");
-} else if (numer === 10){
-    console.log("numer jest identyczny ")
-} else {
-    console.log("inne");
-}
+// console.log(wynik.numerTelefonu);
 
 
-//function wyswietlKomunikat(komunikat){
-//    console.log("Komunikat do wyświetlenia : " + komunikat);
-//}
-
-function wyswietlKomunikat(komunikat, komunikat2){
-    if(komunikat2){
-        console.log("Komunikat do wyświetlenia : " + komunikat + komunikat2);
-    } else {
-        console.log("Komunikat do wyświetlenia : " + komunikat);
+var wyniki = [{
+    nazwa: "Angular",
+    jezyk: "JavaScript",
+    ocena: 4.6,
+    wyswietlWynik: function(){ },
+    wlasciciel: { 
+        login: "mariusz",
+        id: 1234
     }
+},
+{
+    nazwa: "JQuery",
+    jezyk: "JavaScript",
+    ocena: 3.8,
+    wyswietlWynik: function(){ },
+    wlasciciel: { 
+        login: "mariusz",
+        id: 1234
+    }
+}];
+
+console.log(wyniki.length);
+console.log(wyniki[0].nazwa);
+
+// wyniki.push(wynik);
+// wyniki.push({ 
+//     nazwa: "test",
+//     jezyk: "test"
+// });
+
+
+
+// var komunikat = "Witaj JavaScript";
+// console.log(komunikat);
+
+// var resultsDiv = document.getElementById("results");
+// resultsDiv.innerHTML = "<p>To jest JavaScript</p>";
+
+// console.log("Komunikat jest typu : " + typeof(komunikat));
+// console.log("Div wyniki jest typu : " + typeof(resultsDiv));
+
+// var none;
+// console.log("None jest typu : " + typeof(none));
+
+// var numer = 10;
+// console.log("Numer jest typu : " + typeof(numer));
+
+// var prawdaFalsz = true;
+// console.log("PrawdaFalsz jest typu : " + typeof(prawdaFalsz));
+
+// //nowaZmienna = "Test";
+// console.log("nowaZmienna jest typu : " + typeof(nowaZmienna));
+
+// //komunikaty = "Nowa wartosć";
+
+// if(!none){
+//     console.log("None jest niezdefiniowana");
+// } 
+
+// if(numer == "10"){
+//     console.log("numer jest kompatybilny");
+// } else if (numer === 10){
+//     console.log("numer jest identyczny ")
+// } else {
+//     console.log("inne");
+// }
+
+
+// //function wyswietlKomunikat(komunikat){
+// //    console.log("Komunikat do wyświetlenia : " + komunikat);
+// //}
+
+// function wyswietlKomunikat(komunikat, komunikat2){
+//     if(komunikat2){
+//         console.log("Komunikat do wyświetlenia : " + komunikat + komunikat2);
+//     } else {
+//         console.log("Komunikat do wyświetlenia : " + komunikat);
+//     }
    
-}
+// }
 
-wyswietlKomunikat("tekst informacyjny");
-wyswietlKomunikat("tekst informacyjny", "kolejny tekst");
+// wyswietlKomunikat("tekst informacyjny");
+// wyswietlKomunikat("tekst informacyjny", "kolejny tekst");
 
-var wyswietlTo = function(komunikat){
-    console.log(komunikat);
-}
+// var wyswietlTo = function(komunikat){
+//     console.log(komunikat);
+// }
 
-wyswietlTo("Komunikat testowy");
+// wyswietlTo("Komunikat testowy");
 
-var wyswietlToGdy = function(komunikat, callback){
-    wyswietlTo(komunikat);
-    callback();
-}
+// var wyswietlToGdy = function(komunikat, callback){
+//     wyswietlTo(komunikat);
+//     callback();
+// }
 
-wyswietlToGdy("wywolujemy wyswietlToGdy", function () {
-    console.log("wywołujemy callback");
-});
+// wyswietlToGdy("wywolujemy wyswietlToGdy", function () {
+//     console.log("wywołujemy callback");
+// });
 
-var global = true;
+// var global = true;
 
-function test(){
-    console.log("global : " + global);
-    var wiadomosc = "jakas wiadomosc";
-    console.log("Test: " + wiadomosc);
+// function test(){
+//     console.log("global : " + global);
+//     var wiadomosc = "jakas wiadomosc";
+//     console.log("Test: " + wiadomosc);
 
-    wyswietlToGdy("Z domkniecia", function(){
-        wyswietlTo("to jest z domkniecia : " + wiadomosc);
-    });
-}
+//     wyswietlToGdy("Z domkniecia", function(){
+//         wyswietlTo("to jest z domkniecia : " + wiadomosc);
+//     });
+// }
 
-//console.log("Test: " + wiadomosc);
+// //console.log("Test: " + wiadomosc);
 
-test();
+// test();
