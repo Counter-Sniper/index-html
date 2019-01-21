@@ -20,6 +20,13 @@ toggleButton.on("click", function(){
         toggleButton.text("Ukryj");
 });
 
+var listaElementow = $("header nav li");
+listaElementow.css("font-weight", "bold");
+listaElementow.css("font-size", "16px");
+listaElementow.filter(":first").css("font-size", "20px");
+
+
+
 // var wynik = {
 //     nazwa: "Angular",
 //     jezyk: "JavaScript",
