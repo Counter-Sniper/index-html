@@ -3,10 +3,22 @@
 Index.js
 
 */
+$(document).ready(function(){
+
 "use strict"
 
 var resultsList = $("#resultsList");
 resultsList.text("To jest z jQuery");
+
+var toggleButton = $("#toglleButton");
+toggleButton.on("click", function(){
+    resultsList.toggle(500);
+
+    if(toggleButton.text() == "Ukryj")
+        toggleButton.text("Pokaż");
+    else
+        toggleButton.text("Ukryj");
+});
 
 // var wynik = {
 //     nazwa: "Angular",
@@ -161,3 +173,5 @@ for(var x = 0; x < wyniki.length; x++){
 // //console.log("Test: " + wiadomosc);
 
 // test();
+
+});
