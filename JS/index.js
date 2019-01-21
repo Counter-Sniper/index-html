@@ -5,6 +5,8 @@ Index.js
 */
 "use strict"
 
+var resultsList = $("#resultsList");
+resultsList.text("To jest z jQuery");
 
 // var wynik = {
 //     nazwa: "Angular",
