@@ -91,3 +91,12 @@ a {
     border: solid 1px #f22;
     border-radius: 10px;
 }
+
+.result{
+    margin: 5px;
+    border: 1px solid #999
+}
+
+.result title {
+    font-weight: bold;
+}

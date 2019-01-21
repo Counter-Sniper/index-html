@@ -76,16 +76,34 @@ var wyniki = [{
     }
 }];
 
+resultsList.empty();
+$.each(wyniki, function(i, element){
 
-for(var x = 0; x < wyniki.length; x++){
+    var newResult = $("<div class='result'>" +
+                        "<div class='title'>" + element.nazwa + "</div>" +
+                        "<div>Język: " + element.jezyk + "</div>" +
+                        "<div>Wlasciciel: " + element.wlasciciel.login + "</div>" +
+                    "</div>");
 
-    var wynik = wyniki[x];
+    newResult.hover(function(){
+        // przyciemniamy
+        $(this).css("background-color", "lightgray");
+    }, function() {
+        // rozjasniamy
+        $(this).css("background-color", "transparent");
+    });
 
-    if(wynik.ocena < 4) continue;
+    resultsList.append(newResult);
+})
 
-    console.log(wynik.nazwa);
-}
+// for(var x = 0; x < wyniki.length; x++){
 
+//     var wynik = wyniki[x];
+
+//     if(wynik.ocena < 4) continue;
+
+//     console.log(wynik.nazwa);
+// }
 
 // console.log(wyniki.length);
 // console.log(wyniki[0].nazwa);
