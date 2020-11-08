@@ -1,4 +1,8 @@
 # HtmlCssJS
+HTML5, CSS, JavaScript, jQuery – Seria Web Developer – część 2
+
+mariuszjurczenko@dev-hobby.pl
+
 Witam w szybkim kursie tworzenia stron WWW dla początkujących z HTML5, CSS,  JavaScript i Jquery.     
 
 Jeśli zaczynasz ten kurs, to wiedz że nauczysz się pewnych umiejętności związanych z tworzeniem stron internetowych. 
@@ -14,3 +18,5 @@ oraz z żądaniami sieciowymi za pomocą JavaScriptu.
 Dzięki poznaniu podstaw i ich wspólnej pracy możesz zacząć szybko działać. 
 odczas tego kursu zapoznam Cię z podstawami tworzenia stron WWW po stronie klienta, 
 pokazując podstawy budowania stron internetowych za pomocą HTML, CSS, JavaScript i jQuery. 
+
+Link do kursu https://dev-hobby.pl/kursy/html5-css-javascript-jquery-seria-web-developer-czesc-2/
